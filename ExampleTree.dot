@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Customer = 1\n 100% samples \n20% Oppty_Created"] ;
+1 [label="Badge Printed = 1\n 60% samples \n40% Oppty_Created"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Engagement Score > 120 \n 30% samples \n50 % Oppty_Created"] ;
+1 -> 2 ;
+3 [label="5% samples \n 70 % Oppty_Created"] ;
+2 -> 3 ;
+4 [label="25% samples \n 20 % Oppty_Created"] ;
+2 -> 4 ;
+5 [label="No Employees > 100 \n 30% samples \n30 % Oppty_Created"] ;
+1 -> 5 ;
+6 [label="5% samples \n40 % Oppty_Created"] ;
+5 -> 6 ;
+7 [label="25% samples \n20 % Oppty_Created"] ;
+5 -> 7 ;
+8 [label="No Employees > 100 \n 40% samples \n10 % Oppty_Created"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Engagement Score > 120 \n 5% samples \n40 % Oppty_Created"] ;
+8 -> 9 ;
+10 [label="2% samples \n40 % Oppty_Created"] ;
+9 -> 10 ;
+11 [label="3% samples \n20 % Oppty_Created"] ;
+9 -> 11 ;
+12 [label="JL_Manager_Level = 1 \n 35% samples \n10 % Oppty_Created"] ;
+8 -> 12 ;
+13 [label="10% samples \n5 % Oppty_Created"] ;
+12 -> 13 ;
+14 [label="20% samples \n1 % Oppty_Created"] ;
+12 -> 14 ;
+}
